@@ -1,0 +1,7 @@
+.git
+.gitignore
+sites/default/services.yml
+sites/default/settings.php
+sites/default/files
+root/logs
+root/tests/reports/*.xml

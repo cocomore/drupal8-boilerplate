@@ -1,0 +1,48 @@
+name: Cocomore profile
+type: profile
+description: 'Cocomore profile.'
+version: VERSION
+core: 8.x
+dependencies:
+  - node
+  - comment
+  - block
+  - breakpoint
+  - ckeditor
+  - config
+  - contextual
+  - menu_link_content
+  - datetime
+  - block_content
+  - entity_reference
+  - image
+  - menu_ui
+  - options
+  - path
+  - taxonomy
+  - dblog
+  - search
+  - toolbar
+  - field_ui
+  - file
+  - telephone
+  - views
+  - views_ui
+  - serialization
+  - rest
+  - hal
+  - restui
+  - geofield
+  - geocoder
+  - geocoder_geofield
+  - addressfield
+  - email_registration
+  - online
+  - noticeboard
+  - mmir
+  - age
+  - flag
+  - timestamp_formatters
+  - set_field
+themes:
+  - seven
