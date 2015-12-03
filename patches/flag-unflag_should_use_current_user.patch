@@ -1,0 +1,13 @@
+diff --git a/src/Controller/ReloadLinkController.php b/src/Controller/ReloadLinkController.php
+index ed88869..dac886d 100644
+--- a/src/Controller/ReloadLinkController.php
++++ b/src/Controller/ReloadLinkController.php
+@@ -100,7 +100,7 @@ class ReloadLinkController extends ControllerBase implements ContainerInjectionI
+     $entity = $this->flagService->getFlaggableById($flag, $entity_id);
+ 
+     try {
+-      $this->flagService->unflag($flag, $entity);
++      $this->flagService->unflag($flag, $entity, $this->currentUser());
+     }
+     catch (\LogicException $e) {
+       // Fail silently so we return to the entity, which will show an updated

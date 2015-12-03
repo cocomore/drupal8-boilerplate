@@ -1,0 +1,13 @@
+diff --git a/core/modules/views/src/Plugin/views/display/EntityReference.php b/core/modules/views/src/Plugin/views/display/EntityReference.php
+index 20ca020..a3b0ad0 100644
+--- a/core/modules/views/src/Plugin/views/display/EntityReference.php
++++ b/core/modules/views/src/Plugin/views/display/EntityReference.php
+@@ -138,7 +138,7 @@ public function query() {
+       foreach ($style_options['options']['search_fields'] as $field_id) {
+         if (!empty($field_id)) {
+           // Get the table and field names for the checked field.
+-          $field_alias = $this->view->query->addField($this->view->field[$field_id]->table, $field_id);
++          $field_alias = $this->view->query->addField($this->view->field[$field_id]->table, $field_id . '_value');
+           $field = $this->view->query->fields[$field_alias];
+           // Add an OR condition for the field.
+           $conditions->condition($field['table'] . '.' . $field['field'], $value, 'LIKE');

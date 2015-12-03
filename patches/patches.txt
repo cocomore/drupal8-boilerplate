@@ -1,0 +1,7 @@
+Patches applied notes:
+
+* custom-2472421-20-complete.patch : When update to the last beta remove this patch. It has been committed.
+* view_output_is_not_used-2174633-33.patch: When update to the last beta use the most recent patch attached.
+* custom-views_entity_reference-2482625-23.patch: When update to the last beta  remove this patch. It has been committed.
+* flag-unflag_should_use_current_user.patch: When update to the last beta remove this patch. It has being resolved in different issues.
+* geocoder-use_custom_provider.patch: Geocoder doesn't parse the town tag, if get's resolved remove this and wik_nominatim_provider module.
