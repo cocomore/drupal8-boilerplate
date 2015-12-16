@@ -23,5 +23,5 @@ if [[ "$HOSTOS" == "Darwin" ]]; then
 elif [[ "$HOSTOS" == "Windows" ]]; then
     echo ${m}
 else
-    spd-say ${m} || echo ${m}
+    spd-say "${m}" || echo "${m}"
 fi
