@@ -32,17 +32,5 @@ dependencies:
   - rest
   - hal
   - restui
-  - geofield
-  - geocoder
-  - geocoder_geofield
-  - addressfield
-  - email_registration
-  - online
-  - noticeboard
-  - mmir
-  - age
-  - flag
-  - timestamp_formatters
-  - set_field
 themes:
   - seven
