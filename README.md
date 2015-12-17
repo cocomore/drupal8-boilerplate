@@ -1,14 +1,35 @@
 Cocomore distribution for D8
 ============================
 
+Features
+--------
+
+* Define a project workflow about how to build, develop and deploy drupal8 based projects.
+* Use docker and docker group to define a set of containers.
+* Use a main tool to update drupal8 projects, set the group of containers, define differents branches origin for web servers, etc...
+* Hide the complexity of integrated tools, like bowline, drush, our own set of drupal8 tools.
+
 How to install
 --------------
 
 TbW
 
-Future directions
------------------
+Tasks
+-----
 
-- [  ] Integrate with bowline (https://github.com/davenuman/bowline)
-- [  ] Update documentation.
-- [  ] Create new set of scripts for main executor.
+- [  ] Update documentation. (Update how to install)
+- [  ] Create a main tool for set up a new project, incorporate existing one, update the drupal containers. (Potentially using php as main language, use drush as reference?) (Codename: crush)
+- [  ] Define final base drupal8 project structure.
+  - [  ] Define docroot behaviour.
+  - [  ] Define final directory layout.
+  - [  ] Procedure to update Drupal8 core into this project structure and with which tool. (Where core lives?)
+  - [  ] Project initialization and installation. (Composer vs Drush make)
+  - [  ] Project update. (Using our current set of tools)
+- [  ] Integrate with bowline (https://github.com/davenuman/bowline). Adapt current installation script to allow: repository source, project name, composer install, drush make using our Drupal profile.
+  - [  ] Add new crush command to bowline set of commands (bowline/bin) that act as an interface with our set of scripts.
+  - [  ] Adapt bowline-install.sh to our needs. (Use parameters for project installation)
+  - [  ] Create a way to define differents drupal8 containers, one from master, another one from develop, etc...
+  - [  ] Define a way to switch to differents database containers.
+  - [  ] Define minimal set integration from bowline into crush.
+- [  ] Implement new crush task, $ crush project:new <project_name>. Install bowline, obtain project repository content and configure it and start containers group.
+- [  ] Implement new crush task, $ crush project:<name>:update. Update the drupal8 instance using our updating tool. (root/scripts/update.sh)
