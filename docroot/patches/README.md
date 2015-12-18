@@ -1,0 +1,1 @@
+Place here your patches for applying them to the Drupal Core or contrib modules.

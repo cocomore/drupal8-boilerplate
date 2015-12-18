@@ -1,0 +1,1 @@
+Place here your drupal project. The web server shoould point here.
