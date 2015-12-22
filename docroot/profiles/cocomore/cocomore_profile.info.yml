@@ -5,32 +5,39 @@ version: VERSION
 core: 8.x
 dependencies:
   - node
-  - comment
+  - history
   - block
   - breakpoint
   - ckeditor
+  - color
   - config
+  - comment
   - contextual
+  - contact
   - menu_link_content
   - datetime
   - block_content
-  - entity_reference
+  - quickedit
+  - editor
+  - help
   - image
   - menu_ui
   - options
   - path
+  - page_cache
+  - dynamic_page_cache
   - taxonomy
   - dblog
   - search
+  - shortcut
   - toolbar
   - field_ui
   - file
-  - telephone
+  - rdf
   - views
   - views_ui
-  - serialization
-  - rest
-  - hal
-  - restui
+  - tour
+  - automated_cron
 themes:
+  - bartik
   - seven

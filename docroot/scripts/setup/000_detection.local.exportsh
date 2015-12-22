@@ -1,0 +1,30 @@
+#!/bin/bash -x
+
+# ----------------------------------------------------
+# Include global helpers.
+# ----------------------------------------------------
+. $ROOT_PATH/lib/globals.sh
+. $ROOT_PATH/lib/getrealpath.sh
+
+# ----------------------------------------------------
+# Obtain and set the current environments settings.
+# ----------------------------------------------------
+ENVIRONMENT=local
+HOST=http://local.d8.cocomore.com
+HTDOCS=`getrealpath ../../../docroot/htdocs`
+ROOT_DIR=`getrealpath ../../`
+
+
+echo "ENVIRONMENT: $ENVIRONMENT"
+echo "HOST: $HOST"
+echo "HTDOCS: $HTDOCS"
+echo "ROOT_DIR: $ROOT_DIR"
+
+# ----------------------------------------------------
+# Export the variables.
+# ----------------------------------------------------
+export ENVIRONMENT
+export HOST
+export HTDOCS
+export ROOT_DIR
+export DRUSHMAKE_PARAMS="--no-core --root=$HTDOCS --working-copy --concurrency=3"
