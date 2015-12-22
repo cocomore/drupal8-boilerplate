@@ -33,3 +33,4 @@ Tasks
   - [  ] Define minimal set integration from bowline into crush.
 - [  ] Implement new crush task, $ crush project:new <project_name>. Install bowline, obtain project repository content and configure it and start containers group.
 - [  ] Implement new crush task, $ crush project:<name>:update. Update the drupal8 instance using our updating tool. (root/scripts/update.sh)
+- [  ] Add automatic tests and CI. (https://github.com/integrations/feature/code)
