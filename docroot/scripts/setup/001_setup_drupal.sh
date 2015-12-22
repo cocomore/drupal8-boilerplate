@@ -10,7 +10,7 @@ cd $HTDOCS/sites/default/
 if [ ! -f "settings.php" ]; then
   # No drupal installed dowload it and place it in the correct directory.
   cp default.settings.php settings.php
-  cat $HTDOCS/../profiles/cocomore/setup.conf >> settings.php
+  cat $ROOT_DIR/conf/drupal/$ENVIRONMENT/setup.conf >> settings.php
 fi
 
 if [ ! -f "services.yml" ]; then
