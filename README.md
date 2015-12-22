@@ -11,8 +11,15 @@ Features
 
 How to install
 --------------
+####How can I start a new project using the Cocomore distribution for D8?
 
-TbW
+Once that you have cloned this project under your workspace follow the next points for setup your new project using this boilerplate.
+
+ - Configure the file **docroot/profiles/cocomore/setup.conf** with the credentials of your database and your database name.
+ - Run: `bash docroot/scripts/setup.sh`
+ - Generate an hash_salt code and place it in your settings.php. For example:   `$settings['hash_salt']='9b9ed92ece0dec4ea1d087a3037505186fd995c9';`
+ - Configure your vhost for pointing at the directory "docroot/htdocs".
+ - Now you have installed your new Drupal site, access to it and start developing your project.
 
 Tasks
 -----
