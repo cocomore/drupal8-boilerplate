@@ -1,0 +1,12 @@
+docroot/htdocs/sites/default/settings.php
+docroot/htdocs/sites/default/services.yml
+docroot/htdocs/sites/simpletest
+docroot/htdocs/sites/default/files
+docroot/htdocs/sites/all
+docroot/htdocs/modules/contrib/*
+docroot/tests/bin/*
+docroot/tests/behat.yml
+docroot/tests/vendor/*
+docroot/logs
+.idea
+.DS_Store
