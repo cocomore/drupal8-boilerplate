@@ -1,4 +1,4 @@
-if [ -f ~/wik-${ENV}.sql ]; then
-  mv ~/wik-${ENV}.sql ~/wik-${ENV}.previous.sql
+if [ -f $ROOT_DIR/sql/dump-${ENV}.sql ]; then
+  mv $ROOT_DIR/sql/dump-${ENV}.sql $ROOT_DIR/sql/dump-${ENV}.previous.sql
 fi
-$DRUSHBIN $DRUSH_PARAMS --yes sql-dump --result-file=~/wik-${ENV}.sql
+$DRUSHBIN $DRUSH_PARAMS --yes sql-dump --result-file=$ROOT_DIR/sql/dump-${ENV}.sql

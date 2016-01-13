@@ -11,8 +11,8 @@
 # ----------------------------------------------------
 ENVIRONMENT=local
 HOST=http://local.d8.cocomore.com
-HTDOCS=`getrealpath ../../../drupal/`
-ROOT_DIR=`getrealpath ../../../drupal/`
+HTDOCS=`getrealpath ../../htdocs`
+ROOT_DIR=`getrealpath ../../`
 
 echo "ENVIRONMENT: $ENVIRONMENT"
 echo "HOST: $HOST"

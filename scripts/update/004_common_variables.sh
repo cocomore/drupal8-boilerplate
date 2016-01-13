@@ -2,8 +2,8 @@
 # ------------------
 # COMMON VARIABLES
 # ------------------
-SYSTEM_SITE=./root/conf/drupal/config/active/system.site.yml
-SETTINGS_FILE=./sites/default/settings.php
+#SYSTEM_SITE=./root/conf/drupal/config/active/system.site.yml
+#SETTINGS_FILE=./sites/default/settings.php
 
 cd $HTDOCS
 
