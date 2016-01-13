@@ -9,4 +9,4 @@ echo "Drush location: $(which $DRUSHBIN)"
 echo "Drush version: $($DRUSHBIN --version)"
 
 $DRUSHBIN sql-drop --yes --debug
-$DRUSHBIN site-install wirimkiez_profile --locale=de --yes --site-name="Wir im Kiez"
+$DRUSHBIN site-install cocomore_profile --locale=de --yes --site-name="Cocomore Drupal 8"
