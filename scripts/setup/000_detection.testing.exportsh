@@ -9,7 +9,7 @@
 # ----------------------------------------------------
 ENVIRONMENT=testing
 HOST=http://testing.d8.cocomore.com
-HTDOCS=`getrealpath ../../../docroot/htdocs`
+HTDOCS=`getrealpath ../../htdocs`
 ROOT_DIR=`getrealpath ../../`
 
 echo "ENVIRONMENT: $ENVIRONMENT"
