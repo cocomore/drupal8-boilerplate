@@ -11,8 +11,8 @@
 # ----------------------------------------------------
 ENVIRONMENT=local
 HOST=http://local.d8.cocomore.com
-HTDOCS=`getrealpath ../../../`
-ROOT_DIR=`getrealpath ../../../`
+HTDOCS=`getrealpath ../../htdocs`
+ROOT_DIR=`getrealpath ../../`
 
 echo "ENVIRONMENT: $ENVIRONMENT"
 echo "HOST: $HOST"
@@ -26,4 +26,3 @@ export ENVIRONMENT
 export HOST
 export HTDOCS
 export ROOT_DIR
-export DRUSHMAKE_PARAMS="--no-core --root=$HTDOCS --working-copy --concurrency=3"

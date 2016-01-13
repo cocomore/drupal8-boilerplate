@@ -11,4 +11,4 @@ php $COMPOSERPHAR global require drush/drush:dev-master#c4d2dc3
 # ee7fedf97bdd378efa40d2a587af7aa249334904
 export DRUSHBIN=$HOME/.composer/vendor/drush/drush/drush
 
-cd $ROOT_DIR
+cd $HTDOCS

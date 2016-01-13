@@ -9,8 +9,8 @@
 # ----------------------------------------------------
 ENVIRONMENT=staging
 HOST=http://staging.d8.cocomore.com
-HTDOCS=`getrealpath ../../../`
-ROOT_DIR=`getrealpath ../../../`
+HTDOCS=`getrealpath ../../htdocs`
+ROOT_DIR=`getrealpath ../../`
 
 echo "ENVIRONMENT: $ENVIRONMENT"
 echo "HOST: $HOST"
@@ -25,4 +25,3 @@ export HOST
 export HTDOCS
 export ROOT_DIR
 # Cannot use --shallow-clone while we use a concrete revision on our makefile.
-export DRUSHMAKE_PARAMS="--no-core --root=$HTDOCS --concurrency=3"
