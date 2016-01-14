@@ -10,6 +10,24 @@ Features
 * Use a main tool to update drupal8 projects, set the group of containers, define differents branches origin for web servers, etc...
 * Hide the complexity of integrated tools, like bowline, drush, our own set of drupal8 tools.
 
+Project structure
+-----------------
+This is the main directory structure for your Drupal projects. This structure aims to have a common structure for all your drupal projects.
+
+Following your will This are the folders and what belongs to each directory.
+
+- **cmi** : Drupal 8 exported configuration.
+- **conf** : Contains configurations such as apache virtual hosts.
+- **htdocs** : The Drupal directory, the virtual host should point here.
+- **logs** : Server logs will be placed here.
+- **patches** : Patches applied to core or contrib code that should be reapplied in case of updates.
+- **profiles** : Profile configuration
+- **scripts** : Project related scripts, including the ones called by jenkins and the update.sh needed to be launched after every deployment (in any environment)
+- **sql** : Initial sql snapshot to begin with the project.
+- **translations** : Translation script with subfolder for po files.
+- **tests** : Javascript tests to be executed with casperjs and phantomjs, Behat tests, etc.
+
+
 How to install
 --------------
 ####How can I start a new project locally using the Cocomore distribution for D8?
@@ -17,8 +35,7 @@ How to install
 Once that you have cloned this project under your workspace follow the next points for setup your new project using this boilerplate.
 
  - First you have to configure your drupal settings for your local environment. Just edit the **setup.conf** file under the directory **docroot/conf/local/setup.conf** with the credentials of your database and your database name.
- - Run the setup script: `bash docroot/scripts/setup.sh`
- - Generate an hash_salt code and place it in your settings.php. For example:   `$settings['hash_salt']='9b9ed92ece0dec4ea1d087a3037505186fd995c9';`
+ - Run the setup script: `bash docroot/scripts/setup.sh` 
  - Configure your vhost for pointing at the directory "docroot/htdocs".
  - Now you have installed your new Drupal site, access to it and start developing your project.
 
