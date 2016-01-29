@@ -11,6 +11,15 @@ cd $HTDOCS/sites/default/
 cp default.settings.php settings.php
 cat $ROOT_DIR/conf/drupal/$ENVIRONMENT/setup.conf >> settings.php
 
+# If local set the development settings.
+if [ $ENVIRONMENT == "local" ]
+then
+  echo "Enabling the developing settings"
+  cp ../example.settings.local.php settings.local.php
+  cat $ROOT_DIR/conf/drupal/$ENVIRONMENT/setup.local.conf >> settings.local.php
+  cat $ROOT_DIR/conf/drupal/$ENVIRONMENT/development.services.conf > ../development.services.yml
+fi
+
 if [ ! -f "services.yml" ]; then
   cp default.services.yml services.yml
 fi

@@ -1,4 +1,5 @@
 htdocs/sites/default/settings.php
+htdocs/sites/default/settings.local.php
 htdocs/sites/default/services.yml
 htdocs/sites/simpletest
 htdocs/sites/default/files
