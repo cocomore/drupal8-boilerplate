@@ -2,7 +2,7 @@
 # --------------------------
 # OTHER ACTIONS.
 # --------------------------
-drush $DRUSH_PARAMS cron
+$DRUSHBIN $DRUSH_PARAMS cron
 # --------------------------
 # SET PERMISSIONS.
 # --------------------------

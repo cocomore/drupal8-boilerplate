@@ -1,16 +1,19 @@
+#!/bin/bash -x
+
 # ----------------------------------------------------
 # Include global helpers.
 # ----------------------------------------------------
-. $ROOT_PATH/lib/getrealpath.sh
 . $ROOT_PATH/lib/globals.sh
+. $ROOT_PATH/lib/getrealpath.sh
 
 # ----------------------------------------------------
 # Obtain and set the current environments settings.
 # ----------------------------------------------------
-ENVIRONMENT=testing
-HOST=http://testing.d8.cocomore.com
+ENVIRONMENT=local
+HOST=http://local.d8.cocomore.com
 HTDOCS=`getrealpath ../../htdocs`
 ROOT_DIR=`getrealpath ../../`
+
 
 echo "ENVIRONMENT: $ENVIRONMENT"
 echo "HOST: $HOST"
@@ -24,6 +27,5 @@ export ENVIRONMENT
 export HOST
 export HTDOCS
 export ROOT_DIR
-# Cannot use --shallow-clone while we use a concrete revision on our makefile.
-export DRUSHMAKE_PARAMS="--no-core --root=$HTDOCS --concurrency=3"
+export DRUSHMAKE_PARAMS="--no-core --root=$HTDOCS --working-copy --concurrency=3"
 export DRUSHBIN=$HOME/.composer/vendor/drush/drush/drush

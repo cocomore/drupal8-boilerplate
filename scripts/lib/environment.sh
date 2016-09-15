@@ -12,6 +12,11 @@ case "$PARAM" in
     ENV="testing"
   ;;
 
+  # Production environment.
+  production)
+    ENV="production"
+  ;;
+
   # Development environment.
   *)
     ENV="local"

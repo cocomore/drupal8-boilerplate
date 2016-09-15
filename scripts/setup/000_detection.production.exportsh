@@ -7,8 +7,8 @@
 # ----------------------------------------------------
 # Obtain and set the current environments settings.
 # ----------------------------------------------------
-ENVIRONMENT=testing
-HOST=http://testing.d8.cocomore.com
+ENVIRONMENT=production
+HOST=http://production.d8.cocomore.com
 HTDOCS=`getrealpath ../../htdocs`
 ROOT_DIR=`getrealpath ../../`
 
