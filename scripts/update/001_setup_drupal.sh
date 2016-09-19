@@ -3,10 +3,8 @@
 cd $HTDOCS/sites/default/
 
 # Reset the settings.php file.
-chmod 775 settings.php
 cp default.settings.php settings.php
 cat $ROOT_DIR/conf/drupal/$ENVIRONMENT/setup.conf >> settings.php
-chmod 664 settings.php
 
 if [ ! -f "services.yml" ]; then
   cp default.services.yml services.yml

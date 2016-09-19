@@ -11,3 +11,9 @@ else
 fi
 
 export WWW_GROUP
+
+SITE_NAME="Cocomore Drupal 8"
+export SITE_NAME
+
+PROJECT_NAME='drupal8'
+export PROJECT_NAME

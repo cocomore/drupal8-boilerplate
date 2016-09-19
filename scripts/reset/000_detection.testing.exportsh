@@ -25,4 +25,5 @@ export HOST
 export HTDOCS
 export ROOT_DIR
 # Cannot use --shallow-clone while we use a concrete revision on our makefile.
-export DRUSHMAKE_PARAMS="--no-core --root=$HTDOCS --concurrency=3"
+export DRUSHMAKE_PARAMS="--no-core --root=$HTDOCS --working-copy --concurrency=3"
+export DRUSHBIN=$HOME/.composer/vendor/drush/drush/drush

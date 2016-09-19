@@ -26,3 +26,5 @@ export ENVIRONMENT
 export HOST
 export HTDOCS
 export ROOT_DIR
+export DRUSHMAKE_PARAMS="--no-core --root=$HTDOCS --working-copy --concurrency=3"
+export DRUSHBIN=$HOME/.composer/vendor/drush/drush/drush

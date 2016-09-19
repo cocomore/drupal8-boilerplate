@@ -1,5 +1,0 @@
-# Download and install composer.
-
-. $ROOT_PATH/lib/install_drush.sh -r c4d2dc3
-
-cd $ROOT_DIR
