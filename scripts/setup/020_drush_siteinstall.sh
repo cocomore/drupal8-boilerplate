@@ -12,7 +12,7 @@ echo "Drush version: $($DRUSHBIN --version)"
 config_exists=false
 # Null option needs to be set here.
 shopt -s nullglob
-for z in $HTDOCS/cmi/sync/*.yml; do
+for z in $ROOT_DIR/cmi/sync/*.yml; do
   config_exists=true
   break
 done
