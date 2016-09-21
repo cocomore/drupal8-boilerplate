@@ -1,1 +1,0 @@
-Place here the initial sql snapshot to begin with the project.

@@ -24,7 +24,7 @@ Following your will This are the folders and what belongs to each directory.
 - **logs** : Server logs will be placed here.
 - **patches** : Patches applied to core or contrib code that should be reapplied in case of updates.
 - **profiles** : Profile configuration
-- **scripts** : Project related scripts, including the ones called by jenkins and the update.sh needed to be launched after every deployment (in any environment)
+- **custom_scripts** : Project related scripts, including the ones called by jenkins and the update.sh needed to be launched after every deployment (in any environment)
 - **sql** : Initial sql snapshot to begin with the project.
 - **secure**: Salt file.
 - **translations** : Translation script with subfolder for po files.
@@ -37,11 +37,11 @@ Once that you have cloned this project under your workspace follow the next poin
 
  - First you have to configure your drupal settings for your local environment.
    - Edit the **setup.conf** file under the directory **conf/local/setup.conf** with the credentials of your database and your database name.
-   - Edit **001_get_content.sh** file under folder **scripts/sync-staging** and edit backups sftp folder, adding user, pass and url.
-   - Edit **globals.sh** on folder **scripts/lib** and edit variables **SITE_NAME** and **PROJECT_NAME**.
+   - Edit **001_get_content.sh** file under folder **custom_scripts/sync-staging** and edit backups sftp folder, adding user, pass and url.
+   - Edit **globals.sh** on folder **custom_scripts/lib** and edit variables **SITE_NAME** and **PROJECT_NAME**.
    - Edit **sync-staging/001_get_content.sh**. This command imports the database from an external source, by ftp. Change **USER** and **PASS** or even the url and expected folder if needed.
  - Run the setup script: `bash scripts/setup.sh`. If you receive any "AlreadyInstalledException" exception, check previous step again.
- - Configure your vhost for pointing at the directory "htdocs".
+ - Configure your vhost for pointing at the directory "htdocs". If you use docker, find PROJECT_NAME.conf on that repository and change folder accordingly.
  - Now you have installed your new Drupal site, access to it and start developing your project.
 
 Environment considerations
